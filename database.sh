@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update -y
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 sudo apt-get install mysql-server -y
 cd /etc/mysql/mysql.conf.d
 sudo sed -i 's/127.0.0.1/10.0.1.13/g' mysqld.cnf
